@@ -5,7 +5,7 @@ import zio.test.Assertion.equalTo
 import zio.test._
 
 object CryptoTestSuite extends DefaultRunnableSpec {
-  val api: Live = crypto4s.Live(None)
+  val api: Crypto = crypto4s.Crypto(None)
 
   def spec: ZSpec[environment.TestEnvironment, Any] =
     suite("Crypto Test Suite")(

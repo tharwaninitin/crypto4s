@@ -1,10 +1,3 @@
-/*
-// Github Publish Settings
-ThisBuild / publishTo := Some("GitHub tharwaninitin Apache Maven Packages" at s"https://maven.pkg.github.com/tharwaninitin/${name.value}")
-ThisBuild / publishMavenStyle := true
-ThisBuild / credentials += Credentials("GitHub Package Registry", "maven.pkg.github.com", "tharwaninitin", System.getenv("GITHUB_TOKEN"))
- */
-
 // Mandatory Publish Settings
 ThisBuild / pomIncludeRepository := { _ => false }
 ThisBuild / publishTo := {
@@ -19,7 +12,7 @@ ThisBuild / organization         := "com.github.tharwaninitin"
 ThisBuild / organizationName     := "github"
 ThisBuild / organizationHomepage := Some(url(s"https://github.com/tharwaninitin/${name.value}"))
 ThisBuild / homepage             := Some(url(s"https://github.com/tharwaninitin/${name.value}"))
-ThisBuild / description          := "Library to use encryption and decryption in Scala"
+ThisBuild / description          := "Library to encrypt and decrypt in Scala"
 ThisBuild / scmInfo := Some(
   ScmInfo(
     url(s"https://github.com/tharwaninitin/${name.value}"),
